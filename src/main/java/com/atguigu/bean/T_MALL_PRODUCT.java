@@ -5,25 +5,39 @@ import java.util.Date;
 public class T_MALL_PRODUCT {
 	private int id;
 
-	// Product name
+	/*
+	 * Product name
+	 */
 	private String shp_mch;
 
-	// Product image
+	/*
+	 * Product image
+	 */
 	private String shp_tp;
 
-	// Category number 1
+	/*
+	 * Category number 1
+	 */
 	private int flbh1;
 
-	// Category number 2
+	/*
+	 * Category number 2
+	 */
 	private int flbh2;
 
-	// Brand id
+	/*
+	 * Brand id
+	 */
 	private int pp_id;
 
-	// Product created date
+	/*
+	 * Product created date
+	 */
 	private Date chjshj;
 
-	// Product description
+	/*
+	 * Product description
+	 */
 	private String shp_msh;
 
 	public int getId() {
