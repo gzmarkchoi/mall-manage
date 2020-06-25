@@ -19,7 +19,7 @@
 		Admin home
 		<hr>
 		<a href="goto_spu.do" target="_blank">Product information admin</a><br>
-		Product properties admin<br>
+		<a href="goto_attr.do" target="_blank">Product properties admin</a><br>
 		Product stock admin<br>
 		Product buffer stock admin<br>
 		
