@@ -5,11 +5,26 @@ import java.util.Date;
 public class T_MALL_ATTR {
 
 	private int id;
-	private String shxm_mch;
-	private String shfqy;
-	private int flbh2;
-	private Date chjshj;
 
+	/*
+	 * Property name
+	 */
+	private String shxm_mch;
+
+	/*
+	 * Is used
+	 */
+	private String shfqy;
+
+	/*
+	 * Category number 2
+	 */
+	private int flbh2;
+
+	/*
+	 * Created date
+	 */
+	private Date chjshj;
 
 	public int getId() {
 		return id;

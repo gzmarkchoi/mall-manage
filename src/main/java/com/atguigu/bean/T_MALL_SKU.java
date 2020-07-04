@@ -6,37 +6,37 @@ import java.util.Date;
 public class T_MALL_SKU {
 
 	private int id;
-	
+
 	/*
 	 * Product Id
 	 */
 	private int shp_id;
-	
+
 	/*
 	 * Stock
 	 */
 	private int kc;
-	
+
 	/*
 	 * Price
 	 */
 	private BigDecimal jg;
-	
+
 	/*
 	 * Created date
 	 */
 	private Date chjshj;
-	
+
 	/*
 	 * SKU name
 	 */
 	private String sku_mch;
-	
+
 	/*
 	 * Stock address
 	 */
 	private String kcdz;
-	
+
 	/*
 	 * SKU sales
 	 */

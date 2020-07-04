@@ -3,12 +3,12 @@ package com.atguigu.bean;
 public class T_MALL_CLASS_2 {
 
 	private int id;
-	
+
 	/*
 	 * Category class 1
 	 */
 	private String flmch2;
-	
+
 	/*
 	 * Category number 1
 	 */

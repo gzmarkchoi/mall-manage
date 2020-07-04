@@ -15,15 +15,15 @@ public class SpuServiceImpl implements SpuServiceInf {
 
 	@Autowired
 	SpuMapper spuMapper;
-	
+
 	@Override
 	public void saveSpu(List<String> listImages, T_MALL_PRODUCT spu) {
 		// insert SPU info
 		// product default image
 		spu.setShp_tp(listImages.get(0));
 		spuMapper.insert_spu(spu);
-		
-		//insert SPU images
+
+		// insert SPU images
 		Map<Object, Object> map = new HashMap<Object, Object>();
 		map.put("shp_id", spu.getId());
 		map.put("list_image", listImages);

@@ -1,9 +1,22 @@
 package com.atguigu.bean;
 
 public class T_MALL_PRODUCT_IMAGE {
+
 	private int id;
+
+	/*
+	 * Usage
+	 */
 	private String zy;
+
+	/*
+	 * Product Id
+	 */
 	private int shp_id;
+
+	/*
+	 * Product image url
+	 */
 	private String url;
 
 	public int getId() {

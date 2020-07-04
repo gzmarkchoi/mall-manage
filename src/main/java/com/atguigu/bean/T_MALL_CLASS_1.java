@@ -3,7 +3,7 @@ package com.atguigu.bean;
 public class T_MALL_CLASS_1 {
 
 	private int id;
-	
+
 	/*
 	 * Category class 1
 	 */

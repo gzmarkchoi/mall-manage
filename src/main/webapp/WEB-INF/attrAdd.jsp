@@ -1,17 +1,21 @@
- <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<%@page isELIgnored="false"  %>
+
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@page isELIgnored="false"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
-<%String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+request.getContextPath()+"/";%>
+<%
+	String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort()
+		+ request.getContextPath() + "/";
+%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<base href="<%=basePath %>">
+<base href="<%=basePath%>">
 <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <script type="text/javascript">
-	function b(){}
+	function b() {
+	}
 </script>
 <title>Gmall</title>
 </head>
@@ -19,43 +23,43 @@
 	Add product properties
 	<hr>
 	<form action="attr_add.do">
-		<input type="text" value="${flbh2}" name="flbh2"/>
+		<input type="text" value="${flbh2}" name="flbh2" />
 		<table border="1" width="800px">
 			<tr>
-				<td>Property name:：<input type="text" name="list_attr[0].shxm_mch"/></td>
+				<td>Property name:：<input type="text" name="list_attr[0].shxm_mch" /></td>
 				<td></td>
 				<td>Add property value</td>
 			</tr>
 			<tr>
-				<td>Property value: <input type="text" name="list_attr[0].list_value[0].shxzh"/></td>
-				<td>Quantity: <input type="text" name="list_attr[0].list_value[0].shxzh_mch"/></td>
+				<td>Property value: <input type="text" name="list_attr[0].list_value[0].shxzh" /></td>
+				<td>Quantity: <input type="text" name="list_attr[0].list_value[0].shxzh_mch" /></td>
 				<td>Delete</td>
 			</tr>
 			<tr>
-				<td>Property value: <input type="text" name="list_attr[0].list_value[1].shxzh"/></td>
-				<td>Quantity: <input type="text" name="list_attr[0].list_value[1].shxzh_mch"/></td>
+				<td>Property value: <input type="text" name="list_attr[0].list_value[1].shxzh" /></td>
+				<td>Quantity: <input type="text" name="list_attr[0].list_value[1].shxzh_mch" /></td>
 				<td>Delete</td>
 			</tr>
 		</table>
-		
+
 		<table border="1" width="800px">
 			<tr>
-				<td>Property name:：<input type="text" name="list_attr[0].shxm_mch"/></td>
+				<td>Property name:：<input type="text" name="list_attr[1].shxm_mch" /></td>
 				<td></td>
 				<td>Add property value</td>
 			</tr>
 			<tr>
-				<td>Property value: <input type="text" name="list_attr[0].list_value[0].shxzh"/></td>
-				<td>Quantity: <input type="text" name="list_attr[0].list_value[0].shxzh_mch"/></td>
+				<td>Property value: <input type="text" name="list_attr[1].list_value[0].shxzh" /></td>
+				<td>Quantity: <input type="text" name="list_attr[1].list_value[0].shxzh_mch" /></td>
 				<td>Delete</td>
 			</tr>
 			<tr>
-				<td>Property value: <input type="text" name="list_attr[0].list_value[1].shxzh"/></td>
-				<td>Quantity: <input type="text" name="list_attr[0].list_value[1].shxzh_mch"/></td>
+				<td>Property value: <input type="text" name="list_attr[1].list_value[1].shxzh" /></td>
+				<td>Quantity: <input type="text" name="list_attr[1].list_value[1].shxzh_mch" /></td>
 				<td>Delete</td>
 			</tr>
 		</table>
-		Add：<input type="submit" value="Submit"/>
+		Add：<input type="submit" value="Submit" />
 	</form>
 </body>
 </html>

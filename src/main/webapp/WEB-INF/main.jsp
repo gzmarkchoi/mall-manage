@@ -3,7 +3,7 @@
 <%@page isELIgnored="false"  %>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
-<%String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+request.getContextPath()+"/";%>
+<%String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + request.getContextPath() + "/";%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
@@ -18,9 +18,9 @@
 	<body>
 		Admin home
 		<hr>
-		<a href="goto_spu.do" target="_blank">Product information admin</a><br>
+		<a href="goto_spu.do" target="_blank">SPU admin</a><br>
 		<a href="goto_attr.do" target="_blank">Product properties admin</a><br>
-		Product stock admin<br>
+		<a href="goto_sku.do" target="_blank">SKU admin</a><br>
 		Product buffer stock admin<br>
 		
 	</body>
