@@ -36,4 +36,11 @@
 		)
 	</insert>
 
+	<select id="select_spu_list" parameterType="Map" resultType="com.atguigu.bean.T_MALL_PRODUCT">
+		select * from t_mall_product
+		where pp_id = #{pp_id} and
+		flbh2 = #{flbh2}
+	
+	</select>
+
 </mapper>

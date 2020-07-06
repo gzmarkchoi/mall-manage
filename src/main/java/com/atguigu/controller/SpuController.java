@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -41,5 +42,14 @@ public class SpuController {
 		mv.addObject("pp_id", spu.getPp_id());
 
 		return mv;
+	}
+
+	@RequestMapping("get_spu_list")
+	@ResponseBody
+	public List<T_MALL_PRODUCT> get_spu_list(int pp_id, int flbh2) {
+
+		List<T_MALL_PRODUCT> listSpu = spuServiceInf.getSpuList(pp_id, flbh2);
+
+		return listSpu;
 	}
 }

@@ -40,7 +40,7 @@
 <title>Gmall</title>
 </head>
 <body>
-	sku product information admin
+	SKU admin
 	<hr>
 	Level 1:
 	<select id="sku_class_1_select" onchange="get_class_2(this.value);"><option>Please select</option></select> Level 2:
