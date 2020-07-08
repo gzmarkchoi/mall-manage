@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.atguigu.bean.MODEL_T_MALL_ATTR;
@@ -18,6 +19,15 @@ public class AttrController {
 
 	@Autowired
 	AttrServiceInf attrServiceInf;
+
+	@RequestMapping("goto_attr_list_json")
+	@ResponseBody
+	public List<OBJECT_T_MALL_ATTR> goto_attr_list_json(int flbh2, ModelMap map) {
+		List<OBJECT_T_MALL_ATTR> list_attr = new ArrayList<>();
+		list_attr = attrServiceInf.get_attr_list(flbh2);
+
+		return list_attr;
+	}
 
 	@RequestMapping("goto_attr_list")
 	public String goto_attr_list(int flbh2, ModelMap map) {

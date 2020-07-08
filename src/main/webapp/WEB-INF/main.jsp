@@ -60,10 +60,10 @@
 </script>
 <title>gmall</title>
 </head>
-<body>
+<body class="easyui-layout">
 	<div data-options="region:'north',border:false" style="height: 60px; background: #B3DFDA; padding: 10px">north region</div>
-	<div data-options="region:'west',split:true,title:'West'" style="width: 180px; padding: 10px;">
-		<div class="easyui-accordion" style="width: 175px;">
+	<div data-options="region:'west',split:true,title:'West'" style="width: 230px; padding: 10px;">
+		<div class="easyui-accordion" style="width: 200px;">
 			<div title="Admin 1" data-options="iconCls:'icon-ok'">
 				<ul>
 					<li><a href="javascript:add_tab('goto_spu.do','SPU Admin')">SPU admin</a></li>
